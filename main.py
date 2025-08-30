@@ -2,7 +2,6 @@ from flask import Flask, render_template, request
 import google.generativeai as genai
 import pdfplumber
 
-
 def extraction(pdf_name):
     with pdfplumber.open(pdf_name) as p:
         for page in p.pages:
